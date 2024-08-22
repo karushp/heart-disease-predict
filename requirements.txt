@@ -5,3 +5,4 @@ pandas==1.5.3
 streamlit==1.20.0
 streamlit-webrtc
 scikit-learn==1.2.0
+xgboost==1.7.5
