@@ -61,6 +61,7 @@ Total Records: **303**
   - Identified Outliers in numerical features
   - Determined to keep the outlier
 
+     ```plaintext
     Outliers in 'age':
     age  sex  cp  trestbps  chol  fbs  restecg  thalach  exang  oldpeak  slope  ca  thal  target
     72   29   1   1        130    204  0        0        202    0        0.0    2    0    2     1
@@ -84,10 +85,15 @@ Total Records: **303**
   ![alt text](images/target_distribution.png)
 
 ### 6. Model Building
-- **Scaling, Normalizing , Train-Test Split and Grid Search**
+- **Scaling, Normalizing, Train-Test Split and Grid Search**
+-  ```plaintext
     Best Parameters: {'classifier': KNeighborsClassifier(), 'classifier__n_neighbors': 5, 'preprocessor__num': Pipeline(steps=[('scaler', MinMaxScaler())])}
     Best Cross-Validation Score: 0.8683673469387756
     Test Set Score: 0.819672131147541
 
   **Feature Importance**
+   ```plaintext
     thal: 0.080 ± 0.031
+```
+### 7. Final Pipeline
+![alt text](images/final_pipeline.png)
