@@ -76,18 +76,18 @@ Total Records: **303**
     248  54   1   1        192    283  0        0        195    0        0.0    2    1    3     0
 
 ### 4. Correlation Analysis
-  - *** Features and Target Correlation**
+  - **Features and Target Correlation**
    ![alt text](images/features_correlation.png)
 
 ### 5. Target Distribution
-- *** Balanced Target Distribution ***
+- **Balanced Target Distribution**
   ![alt text](images/target_distribution.png)
 
 ### 6. Model Building
-- ***Scaling, Normalizing , Train-Test Split and Grid Search ***
+- **Scaling, Normalizing , Train-Test Split and Grid Search**
     Best Parameters: {'classifier': KNeighborsClassifier(), 'classifier__n_neighbors': 5, 'preprocessor__num': Pipeline(steps=[('scaler', MinMaxScaler())])}
     Best Cross-Validation Score: 0.8683673469387756
     Test Set Score: 0.819672131147541
 
-  *** Feature Importance ***
+  **Feature Importance**
     thal: 0.080 ± 0.031
