@@ -53,7 +53,7 @@ Total Records: **303**
   dtypes: float64(1), int64(13)
 
 
-### 2. Data Visulisation
+### 2. Data Visualisation
   ![alt text](/images/cat_features.png)
   ![alt text](images/num_features.png)
 
