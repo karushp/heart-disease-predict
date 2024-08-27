@@ -1,6 +1,12 @@
 # Heart Disease Analysis and Prediction Model
 
-This project focuses on analyzing and predicting heart disease using a dataset sourced from [Kaggle](https://www.kaggle.com/datasets/krishujeniya/heart-diseae).
+## Project Summary
+
+This project focuses on predicting heart disease using a dataset of 303 patient records. The goal was to enhance predictive accuracy through a series of steps including scaling, normalization, and hyperparameter tuning. The data was divided into training and testing sets, and an extensive grid search was performed to identify the optimal settings for the K-Nearest Neighbors (KNN) model. The resulting model achieved a cross-validation score of 0.8684 and a test set score of 0.8197. 
+
+Additionally, the analysis revealed that the 'thal' (Thalassemia) feature was notably influential in the model's predictions. Despite these achievements, the project faced limitations such as a small dataset, lack of consideration for temporal factors, and absence of external validation.
+
+Data Source : [Kaggle](https://www.kaggle.com/datasets/krishujeniya/heart-diseae)
 
 ## Dataset Overview
 The dataset contains 303 records and the following features:
@@ -97,3 +103,19 @@ Total Records: **303**
 ```
 ### 7. Final Pipeline
 ![alt text](images/final_pipeline.png)
+
+## Limitations 
+- **Small Dataset:** The dataset includes only 303 data points, which may not be sufficient to capture the full variability needed for a robust predictive model.
+
+- **Limited Feature Set:** The dataset includes a limited number of features, which may not capture all relevant factors affecting heart disease. Important variables like lifestyle, diet, or genetic factors are not included, which could limit the model’s predictive power
+
+- **No Consideration of Temporal Factors:** The model does not account for temporal data, such as patient history or the progression of symptoms over time, which are crucial for a comprehensive understanding of heart disease.
+
+- **Lack of External Validation:** The model's performance has been validated using cross-validation within the same dataset, but it has not been tested on an external dataset, limiting its ability to generalize to new, unseen data.
+
+## Conclusion
+This project was focused on enhancing predictive accuracy by implementing scaling and normalization techniques. The data was divided into training and testing sets and an extensive grid search was conducted to optimize the model's hyperparameters. This process resulted in a finely-tuned K-Nearest Neighbors (KNN) model, which achieved a notable cross-validation score of 0.8684 and a test set score of 0.8197.
+
+Feature importance revealed that the 'thal' (Thalassemia) feature significantly influenced the model's predictions, with an importance score of 0.080 ± 0.031.
+
+This comprehensive approach to model development ensured that the final model was precise and interpretable, offering valuable insights into heart disease prediction.
