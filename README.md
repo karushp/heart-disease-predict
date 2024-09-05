@@ -2,7 +2,7 @@
 
 ## Project Summary
 
-This project focuses on predicting heart disease using a dataset of 303 patient records. The goal was to enhance predictive accuracy through a series of steps including scaling, normalization, and hyperparameter tuning. The data was divided into training and testing sets, and an extensive grid search was performed to identify the optimal settings for the K-Nearest Neighbors (KNN) model. The resulting model achieved a cross-validation score of 0.8684 and a test set score of 0.8197. 
+This project focuses on predicting heart disease using a dataset of 303 patient records. The goal was to enhance predictive accuracy through a series of steps including scaling, normalization, and hyperparameter tuning. The data was divided into training and testing sets, and an extensive grid search was performed to identify the optimal settings for the K-Nearest Neighbors (KNN) model. The resulting model achieved a cross-validation score of 0.8684 and a test set score of 0.8197.
 
 Additionally, the analysis revealed that the 'thal' (Thalassemia) feature was notably influential in the model's predictions. Despite these achievements, the project faced limitations such as a small dataset, lack of consideration for temporal factors, and absence of external validation.
 
@@ -69,14 +69,14 @@ Total Records: **303**
 
      ```plaintext
     Outliers in 'age':
-    age  sex  cp  trestbps  chol  fbs  restecg  thalach  exang  oldpeak  slope  ca  thal  target
+        age  sex  cp  trestbps  chol  fbs  restecg  thalach  exang  oldpeak  slope  ca  thal  target
     72   29   1   1        130    204  0        0        202    0        0.0    2    0    2     1
     129  74   0   1        120    269  0        0        121    1        0.2    2    1    2     1
     144  76   0   2        140    197  0        2        116    0        1.1    1    0    2     1
     238  77   1   0        125    304  0        0        162    1        0.0    2    3    2     0
 
     Outliers in 'trestbps':
-    age  sex  cp  trestbps  chol  fbs  restecg  thalach  exang  oldpeak  slope  ca  thal  target
+        age  sex  cp  trestbps  chol  fbs  restecg  thalach  exang  oldpeak  slope  ca  thal  target
     71   51   1   2        94     227  0        1        154    1        0.0    2    1    3     1
     124  39   0   2        94     199  0        1        179    0        0.0    2    0    2     1
     223  56   0   0        200    288  1        0        133    1        4.0    0    2    3     0
@@ -104,7 +104,7 @@ Total Records: **303**
 ### 7. Final Pipeline
 ![alt text](images/final_pipeline.png)
 
-## Limitations 
+## Limitations
 - **Small Dataset:** The dataset includes only 303 data points, which may not be sufficient to capture the full variability needed for a robust predictive model.
 
 - **Limited Feature Set:** The dataset includes a limited number of features, which may not capture all relevant factors affecting heart disease. Important variables like lifestyle, diet, or genetic factors are not included, which could limit the model’s predictive power
